@@ -1,0 +1,1595 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+*{ 
+  margin:0px;
+  padding:0px;
+}
+body{ 
+  font-family: "Alef Hebrew",
+  Helvetica,
+  Arial,
+  sans-serif;
+  direction: rtl;
+}
+
+ .dropdown {
+
+   cursor: pointer;
+ }
+ 
+ .dropdown label {
+   color: rgb(182, 182, 182);
+   box-sizing: border-box;
+   transition: all 0.2s linear 0s;
+   cursor: pointer;
+ }
+ 
+ .dropdown ul {
+   margin: 0px;
+   padding: 0px;
+   list-style: none;
+   width: 100%;
+ }
+ 
+ .dropdown li {
+   margin: 0px;
+   padding: 0px;
+   background: #FFF;
+   width: 100%; max-height: 0px;
+   overflow: hidden;
+   box-sizing: border-box;
+   transition: max-height 0.2s linear 0s;
+ }
+ 
+ .dropdown li:hover {
+   background: rgb(136, 136, 136);
+   color: #FFF;
+ }
+ 
+ .dropdown li span {
+   display: inline-block;
+   padding: 5px 10px;
+   color: black;
+ }
+ 
+ .dropdown:hover label {
+   color:  #606060;;
+ }
+ 
+ .dropdown:hover li {
+   max-height: 50px; /* Any number larger than the actual height of the li works */
+   color: Â black;
+ }
+
+header, nav, section, footer, div {
+  display: block;
+}
+ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  padding-right:40px; 
+  display: inline-block;
+  list-style-type: none; 
+}
+header nav ul{
+margin-bottom: 0px; 
+}
+header nav ul li a,
+header nav ul li a:after,
+header nav ul li a:before {
+ transition: all .1s;
+}
+header nav ul li a:hover {
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+header nav ul li a:hover:after {
+  width: 100%;
+}
+header nav ul li a:after {
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  background: white;
+  height: 6px;
+}
+header nav ul li a{
+  display: inline-block;
+  font-size: 18px;
+  margin-left:70px;
+  margin-top: 100px;
+  color:white;
+  position: relative;
+  margin: 0 10px;
+  padding: 15px;
+  text-decoration: none;
+}
+header{
+  width:100%;
+  background-color:black;
+  text-align: center;
+}
+.header_{
+   width:100%;
+   background-color:black;
+   text-align: center;
+ }
+
+#logo
+{
+  width: 30%;
+  display: inline-block;
+  height: 85px;
+  margin-top: 30px;
+  margin-left: 135px;
+}
+#logo #game{
+   margin-left: 0px;
+} 
+
+h2
+{
+  margin-right: 640px;
+  position: absolute;
+  color:white;
+  /* margin-bottom: 50px; */
+}
+h1{
+  color:white;
+  padding-top: 50px;
+  font-size: 48px;
+}
+header nav{
+  display: inline-block;
+  text-align: center;
+  padding-top: 30px;
+}
+.direc{
+   direction: ltr;
+}
+p{
+  color: white;
+}
+ #SliderTitle
+{
+  position: relative;
+  font-weight:bold;
+  top:-200px; 
+  right:30px; 
+}
+
+
+ #GrayRectangle
+{
+  width:462px;
+  background-color: #606060;
+  color: #f2bd20;
+  font-weight: bold; 
+  font-size:48px;
+
+
+
+}
+
+
+#YellowRectangle
+{
+  width:360px; 
+  padding-top:10px;
+  padding-bottom: 10px; 
+  background-color: #f2bd20;
+  text-align: center; 
+  color:#606060; 
+  font-size:24px; 
+  border-radius: 25px;
+
+}
+/* #logo
+{
+   width:30%; 
+   display: inline-block;
+   width:257px;
+   height:85px; 
+   margin-top:30px; 
+} */
+.arrowGame{
+font-size: 15px;
+position: relative;
+top: -5px;
+}
+.countdown {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.countdown .timeel {
+  display: inline-block;
+  margin: 0;
+  color: #606060;
+  font-size:60px;
+  font-weight: bold; 
+}
+.countdown span[class*="timeRef"] {
+  font-size:20px; 
+  font-weight:bold;
+  padding-left:15px; 
+  padding-right:20px; 
+}
+
+.countdown span[class*="final"] {
+  font-size:50px; 
+  font-weight: bold; 
+  padding-top:10px; 
+  color: #606060;
+}
+
+.AllGames
+{
+  color:white;
+  display: flex;
+  background-color:#606060;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+
+
+.arrow1
+{
+  font-size:15px; 
+}
+
+
+.Bottom
+{
+
+      font-size: 30px;
+      font-weight: bold;
+
+
+}
+
+
+.Top {
+ 
+    text-align: center;
+    margin: 70px;
+}
+
+.BottomVS
+{
+  color: #f2bd20;
+  text-align:center;
+  font-weight: bold;
+  font-size: 36px;
+  margin:15px;
+}
+
+.BottomRight
+{padding-left: 80px;}
+
+.GamesAndPractice
+{
+    display: flex;
+    flex-wrap: wrap; 
+    padding-top:10px;
+  justify-content: center;
+}
+
+.Game,.Practice
+{
+  text-align: center;
+  margin-top:50px;
+  border:  1px solid #f2bd20;
+  font-size:48px;
+  font-weight:bold;
+  color:#606060;
+  padding-right:50px;
+  padding-left:50px;
+  margin-bottom: 120px;
+  min-width: 30vw;
+  min-height: 20vw;
+
+}
+.head
+{
+  position: relative;
+  top: -59px;
+  background-color: white;
+  padding: 60px;
+  padding-top: 25px;
+  background-color: white;
+  padding: 20px;
+}
+
+.circleCalender
+{
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  padding: -10px;
+  border-radius: 50%;
+  border: 3px solid #f2bd20;
+  margin-top: 100px;
+  background-color: white;
+  right: 721px;
+  top: 1290px;
+  right: 595px;
+  top: 1720px;
+}
+
+.cale
+{
+  padding-top: 6px;
+  color: #f2bd20;
+  font-size: 50px;
+  text-align: center;
+}
+
+.myteam
+{
+  color: #c7c7cc;
+  display: flex;
+  background-color: #606060;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.Bold
+{
+  font-size:24px;
+  font-weight:bold;
+  padding-bottom: 5px;
+  text-align: center; 
+}
+
+.Reg
+{
+  font-size:20px; 
+  padding-bottom: 5px;
+
+}
+
+.RegDark 
+{
+  font-size:20px; 
+  padding-bottom: 5px;
+  color: #7a7a7a; 
+  padding-left: 30px;
+
+
+}
+
+.Technical
+{
+  padding: 50px;
+  border-bottom:1px solid white;
+}
+
+.YellowBig
+{
+  color:  #f2bd20;
+  font-weight: bolder;
+  font-size: 50px;
+  margin:0;
+  text-align: center;
+}
+
+.Yellowsmall
+{
+  color:  #f2bd20;
+  font-weight: bolder; 
+  font-size: 30px;
+  margin:0;  
+  text-align: center; 
+  background-color: #606060;
+  width:100%; 
+
+
+}
+
+.Games
+{
+  padding:50px; 
+  border-bottom:1px solid white;
+  text-align: center; 
+}
+
+.MyteamHeadLine>#GrayRectangle
+{
+  height: 100%;
+  background-color: transparent;
+  color: #f2bd20;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+
+}
+.MyteamHeadLine>#YellowRectangle
+{
+    font-weight: bold;
+    border-radius: initial;
+    width: 300px;
+    font-size: 42px;
+}
+
+.MyteamHeadLine
+{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center; 
+}
+
+.pictures
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: flex;
+  padding:25px;
+
+}
+
+.photoPlayer
+{
+  display: block;
+  margin:35px; 
+}
+
+#photoPlayer
+{
+   height: 133px;
+   width: 123px;
+}
+.picture
+{
+  height:133px;
+  width:123px; 
+}
+
+.playerData
+{
+  background-color: white;
+  font-size:18px;
+  font-weight: bold; 
+  color: #000000;
+  text-align:center;
+
+
+}
+
+.role
+{
+  font-size:14px;
+  font-weight: initial;
+  color:  606060;
+}
+
+
+
+.PersonalDataItems
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.PersonalData
+{
+  display: inline-block;
+  align-items: center;
+  padding: 50px;
+
+}
+
+.PersonalData>img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:59px;
+  height:59px; 
+}
+
+.GrayHead
+{
+  font-size:40px;
+  font-weight: bolder;
+  display: inline-block;
+  padding: 15px;
+  
+}
+
+.inline
+{
+  display: inline-flex;
+
+}
+
+
+
+.inline>.YellowBig
+{
+    padding: 10px;
+}
+
+.b{padding: 15px 20px 15px 25px;border-radius: 25px;background-color: #606060;color: #f2bd20;font-size: 14px;text-align: center;margin-bottom: 15px;
+  font-family: "Alef Hebrew",
+  Helvetica,
+  Arial,
+  sans-serif;}
+
+.PersonalInfo
+{
+    text-align: center;
+
+}
+
+.topinfo
+{
+  position: relative;
+  top: -90px;
+  margin: 25px;
+}
+
+.Practice>.RegDark
+{
+  position: relative;
+  top: -100px;
+}
+
+
+.sadSmile
+{
+  font-size:100px ; 
+  color: #c7c7cc;
+}
+.leftb
+{
+  position: relative;
+  top: -42px;  
+}
+
+#userLogged
+{
+  font-size: 16px;
+  color:rgb(182, 182, 182);
+  float: right;
+  /* margin: 30px; */
+  padding-top: 20px;
+  padding-right: 5px;
+}
+
+.team_names>.colored{
+   float:initial;
+}
+a
+{
+  color:inherit; 
+}
+
+.headNav
+{display: block;margin-bottom: 20px;}
+/* -----------------game and set_game part--------------- */
+.top_line{
+   border-bottom: 1.75px solid #EBEBE8;
+   width: 83%;
+   margin-left: 40px; 
+}
+main{
+   position: relative;
+}
+h4{
+   color: #aaaaaa;
+}
+.turnament{
+   color: #aaaaaa;
+   margin-left: 89%;
+   margin-top: -15px;
+   font-size: 18px;
+}
+h3{
+   color: #aaaaaa;
+}
+
+.ellipse{
+   width: 100%;
+   height: 400px;
+}
+.ellipse{
+   background: #f7f6f6;
+   border-radius: 40px;
+   height: 40px;
+   width: 49px;
+}
+.game .flex-container > div{
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 2%;
+   margin: 0px auto;
+}
+.eli{
+   padding-right: 107px;
+   padding-left: 107px;
+   padding-bottom: 51px;
+}
+.first1{
+   margin-top: -135px;
+   margin-left: 8px;
+}
+.ellipse1 {
+   margin-left: 81px;
+   margin-top: 82px;
+}
+.ellipse2{
+   margin-left: 0px;
+   margin-top: 69px;
+}
+.orang_line{
+   border-right: 2px solid orange;
+   height: 304px;
+}
+.ellipse3{
+   margin-left: 81px;
+   margin-top: 24px;
+} 
+.ellipse4{
+   margin-left: 0px;
+   margin-top: -37px;
+} 
+.ellipse5{
+   margin-left: 81px;
+   margin-top: 24px;
+} 
+.ellipse6{
+   margin-left: 0px;
+   margin-top: -40px;
+} 
+.ellipse7{
+   margin-left: 81px;
+   margin-top: 24px;
+}
+.ellipse8{
+   margin-left: 0px;
+   margin-top: -37px;
+}
+.sec_line{
+   border-right: 2px solid #EBEBE8;
+   height: 304px;
+   margin-left: 0px;
+   margin-top: 0px;
+}
+.elli{
+   padding-right: 82px;
+   padding-left: 82px;
+}
+.three{
+   margin-left: 0px;
+   margin-top: 0px;
+}
+.ellipse9{
+   margin-left: 154px;
+   margin-top: 24px;
+}
+.ellipse10{
+   margin-left: 75px;
+   margin-top: -37px;
+}
+.ellipse11{
+   margin-top: -40px;
+   margin-left: 0px;
+}
+.ellipse12{
+   margin-top: 24px;
+   margin-left: 154px;
+}
+.ellipse13{
+   margin-top: 27px;
+   margin-left: 154px;
+}
+.ellipse14{
+   margin-top: -104px;
+   margin-left: 75px;
+}
+.ellipse15{
+   margin-top: -41px;
+   margin-left: 5px;
+}
+.ellipse16{
+   margin-top: 25px;
+   margin-left: 79px;
+}
+.ellipse17{
+   margin-top: -41px;
+   margin-left: 5px;
+}
+.three_line{
+   border-right: 2px solid #EBEBE8;
+   height: 304px;
+
+}
+.ellipse18{
+   margin-left: 154px;
+   margin-top: 24px;
+}
+.ellipse19{
+   margin-left: 75px;
+   margin-top: -37px;
+}
+.ellipse20{
+   margin-top: -40px;
+   margin-left: 0px;
+}
+.ellipse21{
+   margin-top: 24px;
+   margin-left: 154px;
+}
+.ellipse22{
+   margin-top: 27px;
+   margin-left: 154px;
+}
+.ellipse23{
+   margin-top: -104px;
+   margin-left: 75px;
+}
+.ellipse24{
+   margin-top: -41px;
+   margin-left: 5px;
+}
+.ellipse25{
+   margin-top: 25px;
+   margin-left: 79px;
+}
+.ellipse26{
+   margin-top: -40px;
+   margin-left: 5px;
+}
+.ellipse27{
+   margin-top: 27px;
+   margin-left: 154px;
+}
+.ellipse28{
+   margin-top: -40px;
+   margin-left: 79px;
+}
+.ellipse29{
+   margin-top: -40px;
+   margin-left: 8px;
+}
+.orange{
+   background: orange;
+}
+.flex-container .color{
+   background: #d6d6d6;
+}
+.five_line {
+   border-top: 1.75px solid #EBEBE8;
+   width: 73vw;
+   margin-left: 40px;
+   margin-bottom: 31px;
+}
+.clear{
+   clear: both;
+}
+.next_games{
+   color: #aaaaaa;
+   width: auto;
+   font-size: 18px;
+   margin-left: 78vw;
+   margin-top: -46px;
+}
+
+.icon1{
+  color: rgb(170, 170, 170);
+   margin-top: -3%;
+   margin-left: 20%;
+}
+.image{
+   display: block;
+   width: -webkit-fill-available;
+}
+.rights{
+   text-align: -webkit-center;
+}
+.footer_nav nav{
+   height: 25px;
+   width: -webkit-fill-available;
+   position: absolute;
+   margin-left: 34%;
+   margin-top: 19%;
+}
+.footer_nav a{
+   color: #c0c0c0;
+   font-size: 18px;
+   padding-right: 20px;
+   padding-left: 20px;
+   font-weight: 550;
+   float: left;
+   border-right: 2px solid #EBEBE8;
+}
+.rights a{
+   color: #c0c0c0;
+   font-size: 12px;
+   font-weight: 600;
+   position: absolute;
+   margin-top: 25%;
+   margin-left: -7%;
+}
+.wrapper{
+   width: 100%;
+   margin: 0px auto;
+   margin-top: 106px;
+   margin-bottom: 2px;
+   text-align: center;
+   text-decoration: none;
+   direction: ltr;
+}
+.game .flex-container > .my_next_games{
+   padding: 24px 62px 42px;
+}
+.deta{
+   margin-left: 7vw;
+   margin-right: 7vw;
+   width: 16vw;
+   margin-bottom: 3.5%;
+   border-bottom: 1.75px solid #EBEBE8;
+   padding-bottom: 4%;
+   padding-top: 1%;
+}
+/* 
+.option1 a{
+   color: #aaaaaa;
+   font-size: 18px;
+} */
+.option2 a{
+   color: #aaaaaa;
+   font-size: 18px;
+}
+.option2{
+   margin-top: 12%;
+}
+.option1{
+   margin-left: 22%;
+   color: #aaaaaa;
+   font-size: 18px;
+}
+.circle{
+   width: 16px;
+   height: 16px;
+   border-radius: 40px;
+   background: #ebebeb;
+   float: right;
+}
+.circle2{
+   margin-top: -9%;
+}
+.six_line{
+   border-right: 2px solid #EBEBE8;
+   height: 129px;
+   margin-top: -25px;  
+}
+.seven_line{
+   border-right: 2px solid #EBEBE8;
+   height: 129px;
+   margin-top: -25px;
+}
+.date{
+color: #7a7a7a;
+font-size: 24px;
+text-align: left;
+margin-left: 7.5%;
+} 
+.time{
+color: #7a7a7a;
+font-size: 24px;
+text-align: left;
+margin-left: 14.5%;
+}
+.place{
+color: #7a7a7a;
+font-size: 24px;
+text-align: left;
+margin-left: 1.5%;
+}
+.name{
+color: #444444;
+font-size: 40px;
+margin-top: -2%;
+margin-left: -39%;
+}
+.team_compon{
+padding-top: 41px;
+display: inline-flex;
+}
+.vs{
+   color: #f2bd20;
+   font-size: 36px;
+   float: right;
+}
+.game .vs{
+   margin-top: -24%;
+   font-size: 40px;
+}
+.my_next_games{
+   width: auto;
+   height: 13vw;
+}
+.shirt{
+   margin-left: 17%;
+}
+.icon2{
+   float: right;
+   margin-top: -51%;
+}
+.icon3{
+   float: right;
+   margin-top: -33%;
+}
+.icon4{
+   float: right;
+   margin-top: -17%;
+}
+.arrow{
+   float: left;
+   margin-top: -12%;
+   margin-left: -6%;
+}
+.curr a{
+   color: orange;
+   font-size: 26px;
+}
+.next_page a{
+   color: #d6d6d6;
+   margin-top: -35px;
+   font-size: 26px;
+}
+.tittle_arrow{
+   margin-left: -127px;
+   margin-top: -19px;
+   display: flex;
+}
+.next_page{
+   display: flex;
+   margin-left: 47vw;
+}
+.pages{
+   width: auto;
+   height: 47px;
+   margin-top: 121vh;
+   text-align: -webkit-center;  
+}
+
+/* -----------set_game----------------------------- */
+.set_game header{
+height: 238.2px;
+}
+.flex-container{
+   display: flex;
+   flex-wrap: wrap;
+}
+.flex-container_{
+   display: flex;
+   flex-wrap: wrap;
+   height: 1104px;
+}
+.set_game .under_line a{
+  color: #929292;
+  text-decoration-line: underline;
+}
+.set_game h3{
+position: static;
+color: #c0c0c0;
+}
+.set_game .vs{
+font-weight: 600;
+margin-left: 183px;
+font-size: 60px;
+margin-top: -26px;
+}
+.set_game .name{
+color: white;
+font-size: 36px;
+margin-top: -1%;
+margin-left: -46%;
+}
+.close{
+position: absolute;
+ right: 30px;
+ top: 28px;
+}
+.players{
+padding-top: 57px;
+width: auto;
+height: 48px;
+padding-left: 20%;
+padding-bottom: 45px; 
+}
+.cir{
+width: 23px;
+height: 23px;
+margin-bottom: 8px;
+border-radius: 40px;
+background: #f7f6f6;
+float: left;
+margin-right: 35px;
+text-align: center;
+}
+.set_game .icon1{
+margin-left: 54px;
+margin-top: 3px;
+float: left;
+}
+.pos{
+width: 51px;
+height: 51px;
+border-radius: 40px;
+background: orange;
+text-align: center;
+vertical-align: middle;
+font-size: 36px;
+}
+.pos a{
+color: white;
+}
+.positions{
+text-align: center;
+flex-direction: column;
+display: flex;
+}
+.cir1{
+margin-left: 222px;
+margin-top: -627px;
+}
+.cir2{
+margin-left: 382px;
+}
+.cir3{
+margin-top: -41px;
+margin-left: 79px;
+}
+.cir4{
+margin-left: 397px;
+margin-top: 124px;
+}
+.cir5{
+margin-top: -52px;
+margin-left: 224px;
+}
+.cir6{
+margin-top: -49px;
+margin-left: 42px;
+}
+.cir7{
+margin-top: 55px;
+margin-left: 383px;
+}
+.cir8{
+margin-top: -42px;
+margin-left: 67px;
+}
+.cir9{
+margin-top: 22px;
+margin-left: 345px;
+}
+.cir10{
+margin-top: -47px;
+margin-left: 107px;
+}
+.cir11{
+margin-top: 11px;
+margin-left: 225px;
+}
+.fild{
+padding-top: 30px;
+margin: 0px auto;
+}
+.players_list{
+display: none;
+color: #929292;
+font-size: 24px;
+text-align: -webkit-right;
+padding-top: 27vh;
+position: absolute;
+left: 15%;
+list-style: none;
+}
+
+.players_list a{
+color: #929292;
+}
+
+.players_list li{
+   list-style: none;
+}
+.colored{
+float: right;
+color: orange;
+padding-left: 15px;
+}
+
+.fild1{
+text-align: center;
+margin: 0px auto;
+
+}
+
+.shirt{
+   font-size: 40px; 
+}
+
+
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 99 !important; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+ .modal-content {
+   background-color: #fefefe;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%;
+   min-height: 100vh;
+   margin-bottom: 13%;
+ }
+
+ 
+@media (max-width: 1024px){
+   .flex-container_{
+      
+    height: 1140px;
+   }
+   .players_list {
+      margin-left: 33vw;
+      margin-top: 670px;
+  }
+  .modal-content {
+   margin-bottom: 30%;
+}
+.fild1{
+   margin: 0px auto;
+}
+.top_line {
+   width: 79%;
+   margin-left: 40px;
+}
+.five_line{
+   width: 63vw;
+}
+.sec_line{
+   height: 0px;
+}
+.next_games{
+   margin-left: 71%;
+   margin-top: -4%;
+}
+.icon1{
+   margin-left: 27%;
+   margin-top: -2%;
+}
+.footer_nav nav {
+   margin-left: 22%;
+}
+.three_line {
+   position: absolute;
+   left: 49vw;
+   margin-top: 4vh;
+   height: 17%;  
+}
+.deta{
+width: 25vw;
+}
+.orang_line{
+position: absolute;
+left: 49vw;
+height: 260px;
+}
+.date{
+margin-left: 25.5%;
+}
+.time{
+margin-left: 32.5%;
+}
+.place{
+margin-left: 20.5%;
+}
+.icon2{
+margin-top: -39%;
+}
+.icon3{
+margin-top: -24%;
+}
+.icon4{
+margin-top: -10%;
+}
+}
+@media (max-width: 769px){
+
+.players{
+   padding-left: 17vw;
+ padding-bottom: 85px;
+}
+.top_line {
+   margin-left: 15px;
+}
+}
+@media (max-width: 491px){
+   .flex-container_ {
+      height: 978px;
+  }
+   .modal-content {
+      margin-bottom: 39%;
+  }
+  .players_list{
+   margin-top: 101%;
+}
+.fild{
+   width: 95%;
+}
+.turnament {
+   margin-left: 77%;
+}
+.pos{
+   width: 30px;
+   height: 30px;
+   font-size: 21px;  
+}
+.top_line {
+   width: 66%;
+   margin-left: 6px;
+}
+.cir1 {
+   margin-left: 47%;
+   margin-top: -124%;
+}
+.cir2 {
+   margin-left: 70%;
+}
+.cir3 {
+   margin-top: -6%;
+   margin-left: 22%;
+}
+.cir4 {
+   margin-left: 80%;
+   margin-top: 13%;
+}
+.cir5 {
+   margin-top: -5%;
+   margin-left: 46%;
+}
+.cir6 {
+   margin-top: -9%;
+   margin-left: 13%;
+}
+.cir7 {
+   margin-top: 5%;
+   margin-left: 73%;
+}
+.cir8 {
+   margin-top: 0%;
+   margin-left: 20%;
+}
+.cir9 {
+   margin-top: 10%;
+   margin-left: 58%;
+}
+.cir10 {
+   margin-top: -5%;
+   margin-left: 35%;
+}
+.cir11 {
+   margin-top: -3%;
+   margin-left: 47%;
+}
+}
+@media (max-width: 736px){
+.option2 {
+   margin-left: -32%;
+}
+.sec_line {
+   height: 0%;
+}
+.icon1 {
+   margin-left: 97%;
+   margin-top: -8%;
+}
+.next_games {
+margin-left: 70%;
+margin-top: -6%;
+}
+}
+@media (max-width: 734px){
+.three_line{
+   height: 0px;
+}
+}
+@media (max-width: 707px){
+.orang_line {
+   height: 0%;
+}
+}
+
+@media (max-width: 690px){
+.option2 a {
+   margin-left: -9%;
+}
+.game .vs {
+   margin-top: -7%;
+}
+.icon2{
+   margin-top: -57%;
+  }
+  .icon3{
+   margin-top: -35%;
+  }
+  .icon4{
+   margin-top: -15%;
+  }
+.orang_line {
+   height: 0%;
+}
+
+.five_line {
+   width: 54vw;
+}
+.next_games {
+margin-left: 63%;
+}
+.icon1 {
+margin-left: 35%;
+margin-top: -2%;
+}
+}
+@media (max-width: 586px){
+.seven_line{
+   height: 0%;
+}
+}
+@media (max-width: 577px){
+   .six_line{
+      height: 0px;
+   }
+   .deta {
+      width: 33vw;
+      margin-left: 22vw;
+   }
+   .top_line {
+      width: 75%;
+   }
+   .turnament {
+      margin-left: 85%;
+   }
+}
+@media (max-width: 426px){
+.modal-content{
+   margin-bottom: 38%;
+   padding-bottom: 37%;
+}
+.next_games{
+   margin-top: -11%;
+   margin-left: 44%;
+}
+.five_line {
+   width: 38%;
+   margin-left: 17px;
+}
+.icon1 {
+margin-left: 49%;
+margin-top: -8%;
+}
+.deta {
+   width: 67%;
+   margin-left: 13vw;
+}
+.option2 {
+   margin-left: -13%;
+}
+.icon2 {
+   margin-top: -71%;
+}
+.icon3 {
+   margin-top: -43%;
+}
+.icon4 {
+   margin-top: -13%;
+}
+.game .vs {
+   margin-top: -8%;
+}
+.next_page {
+margin-left: 43%;
+}
+.footer_nav nav {
+margin-top: 11%;
+}
+}
+@media (max-width: 396px){
+   .flex-container_ {
+      height: 319px;
+  }
+.set_game header {
+   height: 272.2px;
+}
+
+.modal-content {
+   margin-bottom: 44%;
+   padding-bottom: 164%;
+}
+}
+/* The Close Button */
+.close_ {
+   color: #aaaaaa;
+   float: right;
+   font-size: 35px;
+   font-weight: bold;
+ }
+ 
+ .close_:hover,
+ .close_:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ .fullscreen-image {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(https://milklife.com/sites/default/files/media/2017/06/01/soccer.jpg);
+   height: 100vh;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ .landing {
+   background-color: transparent;
+   position: absolute;
+   bottom: 5px;
+   right: -540px;
+   animation: fadeIn 6s;
+ }
+ #logolanding {
+   animation: fadeIn 6s;
+}
+.landing-p {
+   margin-top: 10px;
+   font-size: 1.3rem;
+   margin-bottom: 30px;
+}
+.landing-p {
+   animation: fadeIn 7s;
+}
+landing-h1, .landing-p {
+   color: white;
+   padding-left: 20px;
+   padding-right: 20px;
+   text-align: center;
+}
+.fullscreen-image>#YellowRectangle {
+   width: 180px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-size: 22px;
+   animation: fadeIn 6s;
+}
+
+.info
+{
+   padding-bottom:5px; 
+}
+.games
+{
+   display: flex;
+}
+@keyframes fadeIn
+ {
+    from{
+       opacity: 0;
+
+    }
+    to
+    {
+       opacity: 1;
+    }
+ }
+ .editbutton{
+   padding-left: 10px;
+ }
+ .body_{
+   width: 77%;
+   margin: 0px auto;
+   text-align: -webkit-right;
+   margin-top: 36px;
+ }
+.team_names{
+   font-size: 22px;
+}
+.pictures > .modal >.modal-content{
+   width: 34%;
+   min-height: 100vh;
+}
+.trash{
+   padding-right: 24px;
+   padding-left: 22px;
+}
+.edit{
+   padding-right: 10px;
+}
+.nam{
+   background-color: black;
+   padding-bottom: 31px;
+}
+#myModal2 > .modal-content, #myModal3 > .modal-content{
+   width: 27%;
+   min-height: 169px;
+}
+#myModal > .modal-content{
+   width: 30%;
+   min-height: 169px;
+}
+.close_2, .close_3{
+   font-size: 35px;
+   font-weight: bold;
+   float: right;
+}
+.modal-content>.ed{
+   font-size: 29px;
+   padding-right: 0px;
+}
+.ro{
+   padding-top: 28px;
+}
+.ro .job{
+   font-size: 20px;
+   color: #929292;
+   padding-left: 43px;
+}
+#myModal2 > .modal-content{
+text-align: center;
+}
+#myModal3 > .modal-content{
+   text-align: center;
+   }
+#btn{
+   background-color: Transparent;
+   background-repeat:no-repeat;
+   border: none;
+   cursor:pointer;
+   overflow: hidden; 
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#yes, #no, .ed,.saveDelete,.cancel,.save {
+   font-weight: 900;
+   font-size: 24px;
+}
+.sub{
+   padding-top: 33px;
+}
+#yes,.saveDelete,.save{
+   color: #62c462;
+}
+#no,.cancel{
+   color: #ee5f5b;
+}
+.custom-select select {
+   display: none; /*hide original SELECT element:*/
+ }
