@@ -136,7 +136,28 @@ $(document).ready(function() {
                 });
 
             });
+$(".icon1").click(function() {
+    var color = $(this).css("color");
 
+    if (color === "rgb(170, 170, 170)") {
+        $(this).css({
+            'color': 'orange'
+        });
+        $(".players_list").css({
+            'display': 'block'
+        });
+        $(".players_list").css({
+            "padding-right": "16%"
+        });
+    } else {
+        $(this).css({
+            'color': '#aaaaaa'
+        });
+        $(".players_list").css({
+            'display': 'none'
+        });
+    }
+});
 
 
         });
@@ -205,25 +226,3 @@ function countDownToTime(countTo, id) {
 }
 
 
-$(".icon1").click(function() {
-    var color = $(this).css("color");
-
-    if (color === "rgb(170, 170, 170)") {
-        $(this).css({
-            'color': 'orange'
-        });
-        $(".players_list").css({
-            'display': 'block'
-        });
-        $(".players_list").css({
-            "padding-right": "16%"
-        });
-    } else {
-        $(this).css({
-            'color': '#aaaaaa'
-        });
-        $(".players_list").css({
-            'display': 'none'
-        });
-    }
-});

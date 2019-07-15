@@ -191,9 +191,12 @@
                         <span class="close_3">&times;</span>
                         <span class="trash ed"><i class="fas fa-trash"></i></span>
                         <div class="sub">
+                        <form class="role ro" action=indexCoach.php method="post">
+                           <form>
                            <span class="jobs">האם אתה בטוח במחיקה?</span>
-                           <button class="saveDelete" id="btn"><i class="fas fa-check-circle"></i></button>
-                           <button class="cancel" id="btn"><i class="fas fa-times-circle"></i></button>
+                           <button name="delete" id="btnyes"><i class="fas fa-check-circle"></i></button>
+                           <button name="cancel" id="btno"><i class="fas fa-times-circle"></i></button>
+                        </form>
                         </div>
                         <script>
                            $(".trashbutton").click(function(){
@@ -203,18 +206,31 @@
                            document.cookie = 'name='+id ;
                            });
                         </script>
-                        <script>
-                           $(".saveDelete").click(function(){
-                             <?php
-                              $teamquery= "DELETE FROM tb_users_214 WHERE playerid='".$_COOKIE['name']."'";
-                                      mysqli_query($connection,$teamquery);
-                                         
-                              ?>
+
+                                   
+
+
+
+<?php
+
+                           if(isset($_POST["save"])){
+                           $update= "UPDATE tb_users_214 SET position ='" 
+                             . $_POST["position"]."' WHERE playerid='".$_COOKIE['name']."'";
+                               mysqli_query($connection,$update);
+                           }
+                           ?>
+
+                        
+<?php
+
+if(isset($_POST["delete"])){
+$update= "DELETE FROM tb_users_214  WHERE playerid='".$_COOKIE['name']."'";
+    mysqli_query($connection,$update);
+}
+?>          
                            
-                               $("#myModal3").css({ 'display':'none'});
-                           
-                           });
-                        </script>
+                
+                        
                         <script>
                            $(".cancel").click(function(){
                              $("#myModal3").css({ 'display':'none'});
@@ -234,8 +250,8 @@
                            <span class="job">הכנס תפקיד:</span>
                            <input type="text" name=position>
                            <div class="sub">
-                              <button name="save" class="save" id="btn"><i class="fas fa-check-circle"></i></button>
-                              <button name="cancel" class="cancel" id="btn"><i class="fas fa-times-circle"></i></button>
+                              <button name="save" id="btnyes"><i class="fas fa-check-circle"></i></button>
+                              <button name="cancel" id="btno"><i class="fas fa-times-circle"></i></button>
                            </div>
                            <script>
                               $(".editbuttontwo").click(function(){
@@ -247,13 +263,7 @@
                               
                            </script>
                         </form>
-                        <?php
-                           if(isset($_POST['save'])){
-                           $teamquery= "UPDATE tb_users_214 SET position ='" 
-                             . $_POST["position"]."' WHERE playerid='".$_COOKIE['name']."'";
-                               mysqli_query($connection,$teamquery);
-                               }
-                           ?>
+                   
                      </div>
                   </div>
                </div>

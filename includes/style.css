@@ -1577,19 +1577,24 @@ text-align: center;
    padding-right: 15px;
    padding-left: 15px;
 }
-#yes, #no, .ed,.saveDelete,.cancel,.save {
+#btnyes, #btno, .ed {
    font-weight: 900;
    font-size: 24px;
 }
 .sub{
    padding-top: 33px;
 }
-#yes,.saveDelete,.save{
+#btnyes{
    color: #62c462;
+   border-color: transparent;
 }
-#no,.cancel{
+#btno{
    color: #ee5f5b;
+   border-color: transparent;
 }
 .custom-select select {
    display: none; /*hide original SELECT element:*/
+ }
+ #myModal > .set_game{
+   width: 70%;
  }

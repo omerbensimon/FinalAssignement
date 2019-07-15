@@ -65,8 +65,9 @@ $rol=0;
     $rol=$_POST['role'];
     $query="INSERT INTO tb_users_214 (firstname,lastname,password,username,teamid,position,image_link,role) VALUES ('$fn' , '$ln' , '$pas' , '$reg' , '$group' , '$pos' , '$webs' , '$rol');";
 
-    $result = mysqli_query($connection,$query);
-    header('Location:../indexlogin.php');
+    $result = mysqli_query($connection,$query);?>
+<script>location.replace ("indexlogin.php")</script>
+<?php
   } 
   else {
     $message="Invalid Data. Try Again";
