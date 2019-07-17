@@ -126,11 +126,13 @@ header{
 
 #logo
 {
-  width: 30%;
+   width: 266px;
+   margin-left: 23px;
   display: inline-block;
   height: 85px;
   margin-top: 30px;
-  margin-left: 135px;
+  background-image: url("../images/Asset1.svg");
+  background-repeat: repeat-y;
 }
 #logo #game{
    margin-left: 0px;
@@ -138,10 +140,9 @@ header{
 
 h2
 {
-  margin-right: 640px;
-  position: absolute;
   color:white;
-  /* margin-bottom: 50px; */
+  text-align: center;
+  padding-right: 8%;
 }
 h1{
   color:white;
@@ -193,14 +194,6 @@ p{
   border-radius: 25px;
 
 }
-/* #logo
-{
-   width:30%; 
-   display: inline-block;
-   width:257px;
-   height:85px; 
-   margin-top:30px; 
-} */
 .arrowGame{
 font-size: 15px;
 position: relative;
@@ -569,6 +562,7 @@ top: -5px;
   /* margin: 30px; */
   padding-top: 20px;
   padding-right: 5px;
+  cursor: pointer;
 }
 
 .team_names>.colored{
@@ -818,13 +812,13 @@ h3{
    float: left;
    border-right: 2px solid #EBEBE8;
 }
-.rights a{
+.rights a {
    color: #c0c0c0;
-   font-size: 12px;
+   font-size: 18px;
    font-weight: 600;
    position: absolute;
-   margin-top: 25%;
-   margin-left: -7%;
+   margin-top: 28%;
+   margin-right: -6%;
 }
 .wrapper{
    width: 100%;
@@ -847,22 +841,19 @@ h3{
    padding-bottom: 4%;
    padding-top: 1%;
 }
-/* 
-.option1 a{
-   color: #aaaaaa;
-   font-size: 18px;
-} */
 .option2 a{
    color: #aaaaaa;
    font-size: 18px;
 }
 .option2{
    margin-top: 12%;
+   cursor: pointer;
 }
 .option1{
    margin-left: 22%;
    color: #aaaaaa;
    font-size: 18px;
+   cursor: pointer;
 }
 .circle{
    width: 16px;
@@ -1154,6 +1145,28 @@ margin: 0px auto;
 
  
 @media (max-width: 1024px){
+   .set_game .name {
+      margin-left: -59%;
+  }
+  .set_game .vs {
+   margin-left: 134px;
+   }
+    .pictures > #myModal > .modal-content {
+      width: 56%;
+      min-height: 119px;
+  }
+   .footer_nav a {
+      font-size: 19px;
+      padding-right: 24px;
+      padding-left: 26px;
+      font-weight: 600;
+  }
+  .rights a {
+   margin-left: 0%;
+   margin-right: -13%;
+   margin-top: 27%;
+   font-size: 19px;
+}
    .flex-container_{
       
     height: 1140px;
@@ -1222,6 +1235,24 @@ margin-top: -24%;
 margin-top: -10%;
 }
 }
+@media(max-width: 767px){
+   header nav ul li a {
+      font-size: 13px;
+   }
+   #GrayRectangle {
+      width: 133px;
+      font-size: 15px;
+   }
+   #SliderTitle {
+      position: sticky;
+      font-weight: bold;
+      margin-top: -7%;
+  }
+  #YellowRectangle {
+   width: 172px;
+   font-size: 14px;
+   }
+}
 @media (max-width: 769px){
 
 .players{
@@ -1231,6 +1262,18 @@ margin-top: -10%;
 .top_line {
    margin-left: 15px;
 }
+.footer_nav a {
+   font-size: 16px;
+   padding-right: 21px;
+   padding-left: 24px;
+   font-weight: 600;
+}
+  .rights a{
+   margin-left: 0%;
+   margin-right: -18%;
+   margin-top: 27%;
+   font-size: 17px;
+} 
 }
 @media (max-width: 491px){
    .flex-container_ {
@@ -1302,20 +1345,20 @@ margin-top: -10%;
 }
 }
 @media (max-width: 736px){
-.option2 {
-   margin-left: -32%;
-}
-.sec_line {
-   height: 0%;
-}
-.icon1 {
-   margin-left: 97%;
-   margin-top: -8%;
-}
-.next_games {
-margin-left: 70%;
-margin-top: -6%;
-}
+   .option2 {
+      margin-left: -32%;
+   }
+   .sec_line {
+      height: 0%;
+   }
+   .icon1 {
+      margin-left: 97%;
+      margin-top: -8%;
+   }
+   .next_games {
+   margin-left: 70%;
+   margin-top: -6%;
+   }  
 }
 @media (max-width: 734px){
 .three_line{
@@ -1327,13 +1370,98 @@ margin-top: -6%;
    height: 0%;
 }
 }
+@media (max-width: 552px){
+   .pictures #myModal2 .modal-content, .pictures #myModal3 .modal-content{
+      width: 65%;
+      min-height: 169px;
+      margin-bottom: 9%;
+      padding-bottom: 0%;
+  
+   }
+   .Game, .Practice {
+      margin-top: 46px;
+      font-size: 39px;
+      margin-bottom: 56px;
+      min-height: 20vw;
+  }
+   .RegDark {
+      font-size: 16px;
+      padding-bottom: 0px;
+      color: #7a7a7a;
+      padding-left: 0px;
+  }
+   #myModal2 .modal-content> .ed, #myModal3 .modal-content> .ed {
+      font-size: 24px;
+      padding-right: 0px;
+  }
+  #myModal2 .ro {
+   padding-top: 22px;
+  }
+  #myModal2 .ro .job {
+      font-size: 17px;
+  }
+  #myModal2{
+   margin-top: 10px;
+  }
+  #myModal2 .sub {
+   padding-top: 13px;
+   }
+   #myModal3 .sub {
+      padding-top: 4px;
+      padding-left: 12px;
+   }
+   #myModal3 .jobs{
+   margin-bottom: 12px;
+   }
+   .footer_nav a {
+      font-size: 16px;
+      padding-right: 7px;
+      padding-left: 5px;
+      font-weight: 600;
+   }
+     .rights a{
+      margin-left: 0%;
+      margin-right: -22%;
+      margin-top: 28%;
+   }   
+   .trashbutton .trash {
+      padding-right: 9px;
+      padding-left: 10px;
+  }
+  .editbuttontwo .edit {
+   padding-right: 0px;
+}
+.body_ .team_names {
+   font-size: 17px;
+}
+}
 
 @media (max-width: 690px){
+   h1 {
+      font-size: 39px;
+  }
+  .nam{
+   font-size: 25px;
+  }
+  .pictures > #myModal > .modal-content {
+   width: 69%;
+  }
+  .body .team_names{
+   font-size: 17px;
+  }
 .option2 a {
    margin-left: -9%;
 }
 .game .vs {
    margin-top: -7%;
+   font-size: 39px;
+}
+.set_game .name {
+   margin-left: -59%;
+   font-size: 27px;
+}
+.my_next_games h1 {
+   font-size: 33px;
 }
 .icon2{
    margin-top: -57%;
@@ -1360,11 +1488,18 @@ margin-top: -2%;
 }
 }
 @media (max-width: 586px){
-.seven_line{
-   height: 0%;
-}
+   .seven_line{
+      height: 0%;
+   }
+
 }
 @media (max-width: 577px){
+   .PersonalData {
+      padding: 31px;
+  }
+  .GrayHead {
+   font-size: 36px;
+  }
    .six_line{
       height: 0px;
    }
@@ -1373,13 +1508,33 @@ margin-top: -2%;
       margin-left: 22vw;
    }
    .top_line {
-      width: 75%;
-   }
-   .turnament {
-      margin-left: 85%;
+      width: 60%;
+  }
+  .turnament {
+   margin-left: 71%;
    }
 }
 @media (max-width: 426px){
+   .countdown .timeel {
+      font-size: 52px;
+  }
+   .my_next_games h3, h4{
+      font-size: 14px;
+  }
+.my_next_games #logo {
+   margin-left: 5%;
+}
+   .footer_nav a {
+      font-size: 16px;
+      padding-right: 1px;
+      padding-left: 5px;
+      font-weight: 600;
+   }
+     .rights a{
+      margin-left: 0%;
+      margin-right: -22%;
+      margin-top: 19%;
+   }   
 .modal-content{
    margin-bottom: 38%;
    padding-bottom: 37%;
@@ -1395,6 +1550,7 @@ margin-top: -2%;
 .icon1 {
 margin-left: 49%;
 margin-top: -8%;
+cursor: pointer;
 }
 .deta {
    width: 67%;
@@ -1423,17 +1579,46 @@ margin-top: 11%;
 }
 }
 @media (max-width: 396px){
+
    .flex-container_ {
       height: 319px;
   }
-.set_game header {
-   height: 272.2px;
-}
+   .set_game header {
+      height: 272.2px;
+   }
+   .my_next_games .modal-content{
+      margin-bottom: 44%;
+      padding-bottom: 96%;
+  
+   }
+   .modal-content {
+      margin-bottom: 44%;
+      padding-bottom: 30%;
+  }
 
-.modal-content {
-   margin-bottom: 44%;
-   padding-bottom: 164%;
-}
+   #circles {
+      margin-top: -3vh;
+      margin-left: 31%;
+      text-align: center;
+  }
+  /* #logo{
+   margin-left: 21%;
+  } */
+  .footer_nav a {
+   font-size: 10px;
+   padding-right: 1px;
+   padding-left: 10px;
+   font-weight: 500;
+  }
+  .rights a{
+   margin-left: 0%;
+   margin-right: -22%;
+   margin-top: 19%;
+   font-size: 11px;
+  }
+  header nav ul li {
+   padding-right: 0px;
+  }
 }
 /* The Close Button */
 .close_ {
@@ -1490,7 +1675,9 @@ landing-h1, .landing-p {
    font-size: 22px;
    animation: fadeIn 6s;
 }
-
+button{
+   cursor: pointer;
+}
 .info
 {
    padding-bottom:5px; 
@@ -1512,6 +1699,7 @@ landing-h1, .landing-p {
  }
  .editbutton{
    padding-left: 10px;
+   cursor: pointer;
  }
  .body_{
    width: 77%;
@@ -1568,15 +1756,7 @@ text-align: center;
 #myModal3 > .modal-content{
    text-align: center;
    }
-#btn{
-   background-color: Transparent;
-   background-repeat:no-repeat;
-   border: none;
-   cursor:pointer;
-   overflow: hidden; 
-   padding-right: 15px;
-   padding-left: 15px;
-}
+
 #btnyes, #btno, .ed {
    font-weight: 900;
    font-size: 24px;
@@ -1586,15 +1766,28 @@ text-align: center;
 }
 #btnyes{
    color: #62c462;
-   border-color: transparent;
+   background-color: Transparent;
+   background-repeat:no-repeat;
+   border: none;
+   cursor:pointer;
+   overflow: hidden; 
+   padding-right: 15px;
+   padding-left: 15px;
 }
 #btno{
    color: #ee5f5b;
    border-color: transparent;
+   background-color: Transparent;
+   background-repeat:no-repeat;
+   border: none;
+   cursor:pointer;
+   overflow: hidden; 
+   padding-right: 15px;
+   padding-left: 15px;
 }
 .custom-select select {
    display: none; /*hide original SELECT element:*/
  }
- #myModal > .set_game{
-   width: 70%;
- }
+ #myModal > .set_game {
+   width: 80%;
+}

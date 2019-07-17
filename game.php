@@ -58,8 +58,8 @@ if (mysqli_num_rows($resultTeam) > 0) {
 </div>
               </div>
           <span class=headNav>
-          <img src="images/Asset 1.svg" id="logo" alt="logo">
-          <h2>הטורניר השנתי</h2>
+          <a id="logo" href="indexCoach.php"></a>
+          <h2 id="">הטורניר השנתי</h2>
           </span>
     
       <nav>

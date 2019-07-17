@@ -7,21 +7,22 @@ include 'sqlDB.php';
 <html>
 	<head>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="includes/styleForm.css">
+    <link rel="stylesheet" href="includes/styleForm.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
   </head>
   <body>
     <form class="signup-form" method="POST" action="">
       <div class="login-page">
-        <img src="images/Asset 1.svg" id="logo2">
+      <a id="logo2" href="indexlogin.php"></a>
         <h1 id="headline2">הטורניר השנתי</h1>
         <div id="form2">
           <form class="register-form">
             <input type="text" name="f_name" class="input-text" required placeholder="First Name">
             <input type="text" name="l_name" class="input-text" required placeholder="Last Name">
-            <input type="password" name="pass" class="input-text" required placeholder="Choose A password" minlength="8"/>
+            <input type="password" name="pass" class="input-text" required placeholder="Choose A password" maxlength="8"/>
             <input type="text" name="reg_name" class="input-text" placeholder="User Name">
-            <input type="number" name="group_id" class="input-text" placeholder="Group Id" minlength="1">
+            <input type="number" name="group_id" class="input-text" placeholder="Group Id" maxlength="4">
             <label for="position">Usual Position On The Team</label>
             <label class="text">חלוץ <input class="check" type="radio" name="position" value="חלוץ"></label>
             <label class="text">שוער <input class="check" type="radio" name="position" value="שוער"></label>

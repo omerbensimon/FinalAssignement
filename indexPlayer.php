@@ -44,6 +44,7 @@ $rowPlayers = mysqli_fetch_array($resultTeam);
     <script src="js/main.js" ></script>
     <script src="js/game.js" ></script>
     <script src="js/image-slider.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="includes/image-slider.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
@@ -71,7 +72,7 @@ $rowPlayers = mysqli_fetch_array($resultTeam);
 </div>
               </div>
           <span class=headNav>
-          <img src="images/Asset 1.svg" id="logo" alt="logo">
+          <a id="logo" href="#"></a>
           <h2>הטורניר השנתי</h2>
           </span>
     

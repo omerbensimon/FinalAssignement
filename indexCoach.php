@@ -45,6 +45,7 @@
       <script src="js/main.js" async></script>
       <script src="js/game.js" async></script>
       <script src="js/image-slider.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="includes/image-slider.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
    </head>
@@ -70,7 +71,7 @@
             </div>
          </div>
          <span class=headNav>
-            <img src="images/Asset 1.svg" id="logo" alt="logo">
+            <a id="logo" href="#"></a>
             <h2>הטורניר השנתי</h2>
          </span>
          <nav>
@@ -193,7 +194,7 @@
                         <div class="sub">
                         <form class="role ro" action=indexCoach.php method="post">
                            <form>
-                           <span class="jobs">האם אתה בטוח במחיקה?</span>
+                           <div class="jobs">האם אתה בטוח במחיקה?</div>
                            <button name="delete" id="btnyes"><i class="fas fa-check-circle"></i></button>
                            <button name="cancel" id="btno"><i class="fas fa-times-circle"></i></button>
                         </form>
@@ -206,39 +207,23 @@
                            document.cookie = 'name='+id ;
                            });
                         </script>
-
-                                   
-
-
-
-<?php
-
-                           if(isset($_POST["save"])){
+                        <?php
+                        if(isset($_POST["save"])){
                            $update= "UPDATE tb_users_214 SET position ='" 
-                             . $_POST["position"]."' WHERE playerid='".$_COOKIE['name']."'";
-                               mysqli_query($connection,$update);
-                           }
-                           ?>
-
-                        
-<?php
-
-if(isset($_POST["delete"])){
-$update= "DELETE FROM tb_users_214  WHERE playerid='".$_COOKIE['name']."'";
-    mysqli_query($connection,$update);
-}
-?>          
-                           
-                
-                        
+                          . $_POST["position"]."' WHERE playerid='".$_COOKIE['name']."'";
+                           mysqli_query($connection,$update);
+                        }
+                        ?>                       
+                        <?php
+                        if(isset($_POST["delete"])){
+                        $update= "DELETE FROM tb_users_214  WHERE playerid='".$_COOKIE['name']."'";
+                           mysqli_query($connection,$update);
+                        }
+                        ?>                                 
                         <script>
                            $(".cancel").click(function(){
-                             $("#myModal3").css({ 'display':'none'});
-                           
-                           });
-                           
-                           
-                           
+                           $("#myModal3").css({ 'display':'none'});
+                        });  
                         </script>
                      </div>
                   </div>
@@ -248,7 +233,7 @@ $update= "DELETE FROM tb_users_214  WHERE playerid='".$_COOKIE['name']."'";
                         <span class="edit ed"><i class="far fa-edit"></i></span>
                         <form class="role ro" action=indexCoach.php method="post">
                            <span class="job">הכנס תפקיד:</span>
-                           <input type="text" name=position>
+                           <input type="text" name=position class="typ">
                            <div class="sub">
                               <button name="save" id="btnyes"><i class="fas fa-check-circle"></i></button>
                               <button name="cancel" id="btno"><i class="fas fa-times-circle"></i></button>
