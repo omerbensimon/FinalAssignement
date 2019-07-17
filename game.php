@@ -56,20 +56,21 @@ if (mysqli_num_rows($resultTeam) > 0) {
     <li><a href="indexlogin.php"><span>התנתק</span></a></li>
   </ul>
 </div>
-              </div>
+</div>
+              <?php if($_SESSION['role']==='Player')
+                  $location="indexPlayer.php";
+                  else{
+                      $location="indexCoach.php";
+                  }?>
           <span class=headNav>
-          <a id="logo" href="indexCoach.php"></a>
+          <a id="logo" href=<?php echo $location?>>    
+             </a>
           <h2 id="">הטורניר השנתי</h2>
           </span>
     
       <nav>
          
               <ul>
-                  <?php if($_SESSION['role']==='player')
-                  $location="indexPlayer.php";
-                  else{
-                      $location="indexCoach.php";
-                  }?>
                   <li><a href= <?php echo $location?>>בית</a></li>
                   <li><a href="#" target="_self">המאמן</a></li>
                   <li><a href="#" target="_self">הטורנירים</a></li>

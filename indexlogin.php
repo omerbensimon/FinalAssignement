@@ -56,7 +56,7 @@ else{
                         <input type="password" placeholder="password" name="reg_pass"/>
                         <button>login</button>
                         <div class="error-message"><?php if(isset($message)) { echo $message; } ?></div> 
-                         <p class="message">Not registered? <a href="signup.php">Create a new account</a></p>
+                         <p class="message">Not registered? <a href="signup.php">Create an account</a></p>
                       </form>
                     </div>
                   </div>

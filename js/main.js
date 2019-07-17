@@ -108,6 +108,7 @@ $(document).ready(function() {
             }
 
             $("#gamesleft").append("נותרו&nbsp;" + gamesLeft + "&nbsp;" + "משחקים");
+            if(teamName!=0)
             $(".Yellowsmall").append(teamName);
 
             $(".close_").click(function() {
